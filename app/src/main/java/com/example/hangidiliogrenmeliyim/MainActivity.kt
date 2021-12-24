@@ -32,6 +32,10 @@ class MainActivity : AppCompatActivity() {
         var resim : ImageView = findViewById(R.id.imageView)
         var aciklama : TextView = findViewById(R.id.textView)
 
+
+        resim.setImageResource(R.drawable.firsttt)
+        aciklama.text = "Hoş Geldiniz. Yukardaki programlama dillerine basarak diller hakkında bilgi edinebilirsiniz. Aşağıdaki şans butonuna basarak şansınıza gelecek olan programlama dilini öğrenebilirsiniz. Öneri butonuna basarak programlama dili önerisi alabilirsiniz."
+
         fun changeImage (button : Button, imageName : Int, info : String) {
             button.setOnClickListener(){
                 aciklama.textSize = 14F
